@@ -1,0 +1,15 @@
+part0要做的工作：理解SaaS app，在Sinatra上写出第一行代码，在heroku上部署
+Gemfile是一些dependencies
+我做到了把git安装好并且搞懂git init，在git bash中将响应指令做好
+之后按part_0上面的提示创建文件并把响应的代码放入文件中
+之后part_0提示run bundler，找到了响应的文件，没有扩展名，我不知道他是要在哪里跑，试了一下vscode发现没有什么结果
+后面要add . 一些东西，查了一下目的是将当前目录下的所有文件到暂存区，但是不太清楚是指的什么修改。一开始我在bash里面输入add显示失败，后面先输入init后再输入add，有反应，下载了一堆东西，输入commit之前要求我的邮箱号，输入邮箱号之后显示invalid key，输入用户名之后成功
+后面的工作是用Sinatra建立一个saas 的app，这段介绍有点难以读懂，但是大概明白他的意思了，saas程序相当于服务器和本地的中间商，响应的是应用程序的http请求。
+而Sinatra框架可以匹配到h5语言，想要运行程序需要启动应用服务器和表示层服务器，我按提示创建了config.ru但是不知道指的是在哪一个目录下面创建。
+按后面的提示我需要在cmd中敲入bundle，但是我敲入之后提示不是内部或外部命令，也不是可运行的程序，所以后面的基本上都做不下去了。
+后文提示我有四个文件需要在under version control，感觉和前面的git add有关系。
+后面modify的过程，推测是修改h5语句。如果不成功，切换到本地运行，跑一次上面的port3000后，应该就可以了，因为每次更改之后需要重新启动rack。因此在Gemfile中添加rerun代码，每次更改都重新run一次代码。再后面实在是看不懂了……
+在去heroku上部署的过程，成功下载并绑定了自己的账户，根目录下输入heroku create成功创建远程库！
+但是后面push heroku master失败， 错误提示：not a git repository (or any of the parent directories): .git
+
+
